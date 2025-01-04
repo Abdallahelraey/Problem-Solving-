@@ -49,7 +49,8 @@ def check_symmetry(s):
     return part_1 == part_2
 
 def check_palindrome(s):
-    return s == s[::-1]
+    part_1, part_2 = split_string(s)
+    return part_1 == part_2[::-1]
 
 # Usage
 def main():
